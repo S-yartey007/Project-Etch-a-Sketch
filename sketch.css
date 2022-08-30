@@ -1,0 +1,19 @@
+body {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+#container {
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.div {
+    background-color: black;
+    flex: 1;
+}
