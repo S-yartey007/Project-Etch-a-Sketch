@@ -52,11 +52,9 @@ button.addEventListener("click",() => {
 })
 
 function getRandomColor() {
-    let letters = "0123456789AF"
-    let colors = "#"
-    for(let i = 0; i < 6 ; i++) {
-        colors += letters[Math.floor(Math.random() * 10)]
-    }
-    return colors;
+    const r = Math.floor(Math.random() * 256)
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+    return `rgb(${r},${g},${b})`
 }
 console.log(getRandomColor());
